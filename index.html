@@ -4,191 +4,59 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Realm Database</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
-
-		body {
-			margin: 0;
-			font-family: 'Inter', sans-serif;
-			background: #0d0d0f;
-			color: #fff;
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-		}
-
-		/* Topbar */
-		.topbar {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 20px 40px;
-			position: relative;
-		}
-
-		.logo {
-			font-weight: 900;
-			font-size: 1.3rem;
-			display: flex;
-			align-items: center;
-			gap: 8px;
-		}
-
-		.logo span {
-			color: #2019f1;
-			/* pink-magenta */
-		}
-
-		.nav {
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-			display: flex;
-			gap: 35px;
-		}
-
-		.nav a {
-			text-decoration: none;
-			color: #fff;
-			font-weight: 600;
-			transition: 0.2s;
-			display: flex;
-			align-items: center;
-			gap: 6px;
-		}
-
-		.nav a:hover {
-			color: #4232ce;
-			/* magenta hover */
-		}
-
-		/* Main layout */
-		.container {
-			flex: 1;
-			display: flex;
-			justify-content: center;
-			/* horizontal center */
-			align-items: center;
-			/* vertical center */
-			gap: 60px;
-			padding: 40px;
-		}
-
-		/* Left Section */
-		.left {
-			max-width: 420px;
-		}
-
-		.tag {
-			display: inline-block;
-			margin-top: 20px;
-			padding: 6px 12px;
-			background: #1a1a1a;
-			border-radius: 6px;
-			font-size: 0.9rem;
-			color: #fff;
-			border: 1px solid #333;
-		}
-
-		h1 {
-			margin: 20px 0;
-			font-size: 2.5rem;
-			font-weight: 900;
-			background: linear-gradient(to right, #5036cf, #1d2a7f);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-
-		p {
-			color: #aaa;
-			font-size: 1rem;
-			margin-bottom: 25px;
-		}
-
-		.buttons {
-			display: flex;
-			gap: 15px;
-		}
-
-		.btn {
-			padding: 12px 25px;
-			border-radius: 8px;
-			font-weight: 600;
-			text-decoration: none;
-			transition: 0.3s;
-		}
-
-		.btn-download {
-			background: linear-gradient(to right, #5036cf, #1d2a7f);
-			color: #fff;
-			box-shadow: 0 4px 15px rgba(41, 7, 164, 0.4);
-		}
-
-		.btn-download:hover {
-			opacity: 0.85;
-		}
-
-		.btn-showcase {
-			background: #1a1a1a;
-			border: 1px solid #333;
-			color: #fff;
-		}
-
-		.btn-showcase:hover {
-			background: #2a2a2a;
-		}
-
-		/* Right Section (Image placeholder) */
-		.image-box {
-			background: #1a1a1a;
-			border-radius: 12px;
-			width: 400px;
-			height: 260px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: #666;
-			font-size: 0.9rem;
-			font-style: italic;
-			border: 1px dashed #333;
-		}
-
-		.image-box img {
-			max-width: 100%;
-			max-height: 100%;
-			border-radius: 12px;
-		}
-	</style>
+	<title>TrayePlays Portfolio</title>
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 	<!-- Topbar -->
 	<div class="topbar">
-		<div class="logo"><span>🔷 Traye LLC</span> Utils</div>
+		<div class="logo"><span>🔷 TrayePlays</span></div>
 		<div class="nav">
-			<a href="#">🔷 Downloads</a>
-			<a href="#">🔷 Showcase</a>
+			<a href="index.html#">🏠 Home</a>
+			<a href="index.html#projects">📦 Projects</a>
+			<a href="contact.html">📬 Contact</a>
 		</div>
 	</div>
 
 	<!-- Main content -->
 	<div class="container">
-		<!-- Left side -->
-		<div class="left">
-			<div class="tag">🔵 Made by TrayePlays</div>
-			<h1>Loading <br> With <br> Ez</h1>
-			<p>Best Kit Loading on MCBE for realms, worlds, servers!</p>
-			<div class="buttons">
-				<a href="#" class="btn btn-download">⬇ Download</a>
-				<a href="#" class="btn btn-showcase">⭐ Showcase</a>
+		<!-- Profile Card -->
+		<div class="profile-card">
+			<div class="profile-img">
+				<img src="images/traye_pfp.png" alt="TrayePlays">
+			</div>
+			<div class="profile-text">
+				<h1>Hi, I'm <span>TrayePlays</span></h1>
+				<p>I'm a Minecraft Bedrock Add-on developer focused on Script API and behavior packs. I build custom
+					entities, game mechanics, and all using JavaScript and JSON.</p>
+				<a href="index.html#contact" class="button">Check out my projects!</a>
 			</div>
 		</div>
 
-		<!-- Right side -->
-		<div class="image-box">
-			Image Placeholder
-			<!-- Replace with: <img src="your-image.png" alt="Preview"> -->
+		<!-- Projects Section -->
+		<div class="projects" id="projects">
+			<h2>Featured Projects</h2>
+			<div class="project-list">
+				<div class="project">
+					<img src="images/trayes_games.png" alt="Traye's Games World">
+					<h3>Traye's Games World</h3>
+					<p>10 mini-games, custom systems, and original models — all in Minecraft Bedrock.</p>
+					<a href="project_trayes_games.html">🔗 Learn More</a>
+				</div>
+				<div class="project">
+					<img src="images/geometry_dash.png" alt="Geometry Dash in Minecraft">
+					<h3>Geometry Dash in Minecraft</h3>
+					<p>A playable clone with level editor and smooth custom mechanics.</p>
+					<a href="project_geometry_dash.html">🔗 Learn More</a>
+				</div>
+				<div class="project">
+					<img src="images/skribbl.png" alt="Skribbl in Minecraft">
+					<h3>Skribbl in Minecraft</h3>
+					<p>Draw and guess in multiplayer — powered by Script API and custom UI.</p>
+					<a href="project_skribbl.html">🔗 Learn More</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

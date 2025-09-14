@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0f;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    color: #2019f1;
+}
+
+.nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 35px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav a:hover {
+    color: transparent;
+    background: linear-gradient(to right, #5036cf, #1d2a7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Main layout */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 60px;
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.profile-img img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5036cf;
+}
+
+.profile-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.profile-text h1 span {
+    color: #5036cf;
+}
+
+.profile-text p {
+    color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5036cf;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    background: #3b28a0;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background: #2a2a2a;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    color: transparent;
+    background: linear-gradient(to right, #5036cf, #1d2a7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-buttons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Projects Section */
+.projects {
+    width: 100%;
+    max-width: 900px;
+}
+
+.projects h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    background: #2a2a2a;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.project p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #5036cf;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.contact-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-pfp {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5036cf;
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
